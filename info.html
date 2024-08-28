@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Website HTML and CSS</title>
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/info.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Google Fonts Links For Icon -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+  </head>
+  <body>
+    <header>
+        <nav class="navbar">
+          <a class="logo" href="index.html">JustEat<span>.</span></a>           
+            <ul class="menu-links">
+                <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="event.html">Parties</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="contact.html">Contact us</a></li>
+           </ul>
+            <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+        </nav>
+      </header>
+
+
+      
+      <div class="info-container">
+        <div class="info-content">
+            <div class="info-title">
+              <h2>Information</h2>
+              <p>
+                <strong>Overview:</strong> The <strong>JustEat</strong> is an upscale dining establishment 
+                that offers an exquisite culinary experience, blending traditional 
+                flavors with modern techniques. Nestled in the heart of Foodie City, 
+                this restaurant is a haven for food enthusiasts who appreciate fine dining 
+                and exceptional service.
+
+              <br><strong>Ambiance:</strong> The <strong>JustEat</strong> boasts a sophisticated and elegant ambiance, 
+                with a contemporary design that features warm lighting, plush seating, 
+                and tasteful decor. The open kitchen concept allows diners to witness 
+                the culinary artistry in action, adding an element of excitement to 
+                the dining experience. The restaurant also offers a private dining 
+                area for special occasions and intimate gatherings. 
+              </p>
+            </div>
+        
+            <div class="dishes">
+              <h3>Signature Dishes</h3>
+              <ol>
+                <li><strong>Lobster with Red Pepper and Cardamon Jus</strong> our sweet native lobsters - at their best and most 
+                  plentiful in summer and autumn - with cardamom in this very special dish.</li>
+                <br><li><strong>Pan-Seared Scallops:</strong> Succulent scallops served with a citrus beurre blanc, 
+                    accompanied by a medley of seasonal vegetables.</li>
+                <br><li><strong>Braised Short Ribs:</strong> Tender short ribs slow-cooked to perfection, 
+                      served with a rich red wine reduction and garlic mashed potatoes.</li>
+                <br><li><strong>Chocolate Fondant:</strong> A decadent dessert featuring a molten chocolate center, 
+                  served with vanilla bean ice cream and fresh berries.</li>
+              </ol>
+            </div>
+
+            <div class="service">
+              <h4>Services</h4>
+              <p>At The <strong>JustEat</strong>, we pride ourselves on providing impeccable service. 
+                Our attentive and knowledgeable staff are dedicated to ensuring that every 
+                guest has a delightful and memorable dining experience. From the moment you 
+                walk through our doors, you will be treated with the utmost care and hospitality.
+              </p>
+            </div>
+        </div>
+      </div>
+    
+      <div class="slider">
+        <div class="slides">
+            <div class="slide">
+              <img src="image/dishes1.png" alt="Image 1">
+              <div class="text">Signature Dish 1</div>
+              <div class="text1">Pan-Seared Scallops</div>
+            </div>
+
+            <div class="slide">
+              <img src="image/dishes2.png" alt="Image 2">
+              <div class="text">Signature Dish 2</div>
+              <div class="text1">Braised Short Ribs</div>
+            </div>
+
+            <div class="slide">
+              <img src="image/dishes3.png" alt="Image 3">
+              <div class="text">Signature Dish 3</div>
+              <div class="text1">Chocolate Fondant</div>
+            </div>
+            <div class="slide">
+              <img src="image/dishes4.png" alt="Image 4">
+              <div class="text">Signature Dish 4</div>
+              <div class="text1">Lobster with Red Pepper & Cardamon</div>
+            </div>
+        </div>
+        <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="next" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+      
+    <footer>
+      <hr>
+      <div class="footer-content">
+        <div class="home">
+          <h3>HOME</h3>
+          Acacia Park Homes
+          <br>Calamba City, Laguna 4027
+        </div>
+        
+        <div class="hours">
+          <h2>HOURS</h2>
+          Monday- Thursday: 10Am to 10Pm
+          <br>Friday- Saturday: 12Pm to 10Pm
+          <br>Sunday: 4Pm to 10Pm 
+          <p><a href="info.html"><em>click for more info</em></a></p>
+        </div>
+        <div class="socialmedia-icon">
+          <h2><em>Follow us</em></h2>
+          <a href="#"><i class="fa-brands fa-square-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-square-youtube"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="#"><i class="fa-brands fa-square-instagram"></i> </a>
+        </div>
+        
+          <p class="footer_copy">&#169; Abner Olivarez | All Rights Reserved 2025
+             </p> 
+        
+      </div> 
+    </footer>
+
+  <script src="js/script.js"></script>
+  <script src="js/info.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  
+</body>
+</html>
