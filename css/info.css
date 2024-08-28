@@ -1,0 +1,189 @@
+
+.info-container{
+    background: url("../image/pict3.jpg");
+    background-attachment: fixed;
+      
+}
+
+.info-content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    column-gap: 4rem;
+    padding: 7rem;
+}
+.info-content  h2, h3, h4{
+    font-size: 1.5rem;
+    color: crimson;
+}
+
+.info-content p{
+    font-size: 1rem;   
+}
+
+ /* Swiper Section */
+ 
+ .slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+    background-image: url('../image/hero-bg.jpg');
+    background-attachment: fixed;
+    
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+.slide .text, .slide .text1{
+    font-size: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+ 
+
+ /* Mobile adjusment size */
+ @media screen and (max-width: 1109px){
+    
+    .info-content{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        column-gap: 4rem;
+        padding: 6rem;
+    }
+    .info-title p, .dishes, .service p{
+        font-size: .8rem;
+    }
+    .swiper-container .swiper-button-next, 
+    .swiper-container .swiper-button-prev, 
+    .swiper-container .pagination{
+    margin-top: 30rem;
+ }
+}
+
+ @media screen and (max-width: 1000px){
+    .info-title p, .dishes, .service p{
+        font-size: .8rem;
+    }
+    .swiper-container .swiper-button-next, 
+    .swiper-container .swiper-button-prev, 
+    .swiper-container .pagination{
+    margin-top: 35rem;
+ }  
+ }
+ @media screen and (max-width: 800px){
+           
+    .info-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+        font-size: 1rem;
+        column-gap: 5rem;
+        padding: 4rem;
+    }
+    .info-title p, .dishes, .service p{
+        font-size: .7rem;
+    }
+    .swiper-container .swiper-button-next, 
+    .swiper-container .swiper-button-prev, 
+    .swiper-container .pagination{
+    margin-top: 29rem;
+ }
+ .swiper-slide img{
+    text-align: center;
+    width: 90%;  
+}
+ .swiper-slide {
+    text-align: center;
+   
+}
+ footer .footer-content{
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(1, .1fr);
+    font-size: .7rem;
+    padding: 2rem;
+    
+  }
+ }
+ @media screen and (max-width: 680px){
+    .swiper-slide img{
+        text-align: center;
+        width: 90%;  
+    }
+     .swiper-container .swiper-button-next, 
+    .swiper-container .swiper-button-prev, 
+    .swiper-container .pagination{
+    margin-top: 32rem;
+ }
+ 
+ }
+
+ @media screen and (max-width: 500px){
+    .swiper-slide img{
+        text-align: center;
+        width: 90%;  
+    }
+     .swiper-container .swiper-button-next, 
+    .swiper-container .swiper-button-prev, 
+    .swiper-container .pagination{
+    margin-top: 35rem;
+ }
+ .swiper-slide .text, .swiper-slide .text1{
+    color: #000;
+ }
+ }
+
+ @media screen and (max-width: 400px){
+    .swiper-slide img{
+        text-align: center;
+        width: 90%;  
+    }
+     .swiper-container .swiper-button-next, 
+    .swiper-container .swiper-button-prev, 
+    .swiper-container .pagination{
+    margin-top: 45rem;
+ }
+ }
+
+ @media screen and (max-width: 300px){
+    .swiper-slide img{
+        text-align: center;
+        width: 90%;  
+    }
+}
+
+
+ 

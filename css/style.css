@@ -1,0 +1,355 @@
+/* Importing Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+:root{
+  --title-color: #06c726;
+  --text-color: #ffff;
+  --text1-color: #000;
+  --backgrnd-color: rgb(216, 216, 216);
+  --header-color: white;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--header-color);
+  z-index: 1000;
+}
+header {
+  
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+header.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+header .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1300px;
+  margin: 0 auto;
+  
+}
+
+.navbar .logo {
+  color: var(--text1-color);
+  font-weight: 600;
+  font-size: 2.1rem;
+  text-decoration: none;
+}
+
+.navbar .logo span {
+  color: var(--title-color);
+}
+
+.navbar .menu-links {
+  display: flex;
+  list-style: none;
+  gap: 35px;
+}
+
+.navbar a {
+  font-size: 1.2rem;
+  color: var(--text1-color);
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  text-decoration-color: var(--title-color);
+}
+
+.hero-section {
+  height: 100vh;
+  background-image: url("../image/hero-bg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  
+  align-items: center;
+  padding: 0 20px;
+}
+
+.hero-section .content {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  color: var(--text-color);
+}
+
+.hero-section .content h2 {
+  font-size: 3rem;
+  max-width: 600px;
+  line-height: 70px;
+}
+
+.hero-section .content p {
+  font-weight: 300;
+  max-width: 600px;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  
+}
+
+.hero-section .content button {
+  background: var(--text-color);
+  padding: 12px 30px;
+  border: none;
+  font-size: 1rem;
+  border-radius: 6px;
+  margin-top: 38px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.hero-section .content button:hover {
+  color: var(--text-color);
+  background: var(--title-color);
+}
+
+.equiptment .content-kitchen{
+  display: grid;
+  gap: .5rem;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: 5rem;
+}
+
+.content .content-kitchen .kitchen, .kitchen1{
+  
+  width: 80%;
+  margin-bottom: 10rem;
+  margin: auto 
+}
+
+.kitchen, .kitchen1{
+  opacity: 0;
+  z-index: -1;
+  transform: translateY(50px);
+  transition: opacity 1s ease-in-out, transform 2s ease-out;
+}
+.kitchen.visible, .kitchen1.visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content-kitchen .tools{
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 500;
+}
+
+.ambience-image .ambience-img{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  width: 100%;
+}
+.content-ambience .content-text {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+footer .footer-content{
+  display: grid;
+  row-gap: 5rem;
+  grid-template-columns: repeat(3, 1fr);
+  background: var(--header-color);
+  text-align: center;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+/* Icon Section FB YT LINKIN Instagram */
+
+.fa-square-facebook {
+  color: rgb(0, 89, 255);
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.fa-square-facebook:hover{
+  border: 2px solid rgb(0, 89, 255);
+  border-radius: 10px;
+}
+.fa-square-youtube{
+  color: rgb(255, 30, 0);
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.fa-square-youtube:hover{
+  border: 2px solid rgb(255, 30, 0);
+  border-radius: 10px;
+}
+.fa-linkedin{
+  color: rgb(92, 141, 233);
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.fa-linkedin:hover{
+  border: 2px solid rgb(92, 141, 233);
+  border-radius: 10px;
+}
+.fa-square-instagram{
+  color: rgb(230, 15, 147);
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.fa-square-instagram:hover{
+  border: 2px solid rgb(230, 15, 147);
+  border-radius: 10px;
+}
+.socialmedia-icon i{
+  font-size: 2rem;
+  margin-left: .5rem;
+}
+
+.socialmedia-icon {
+  font-size: .8rem;
+  
+}
+
+footer .home h3, footer .hours h2{
+  font-size: 1.5rem;
+  color: crimson;
+}
+footer .hours p a{
+  cursor: pointer;
+  text-decoration: none;
+}
+footer .hours p a:hover{
+  color: var(--title-color);
+}
+
+#close-menu-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#hamburger-btn {
+  color: var(--text1-color);
+  cursor: pointer;
+  display: none;
+}
+/* Mobile Screen Set Up */
+@media screen and (max-width: 800px){
+  .amount-order{
+    width: 40%;
+    padding: .5rem;
+    font-size: 1rem;
+    margin-top: 29.8rem;
+  }
+  .checkout{
+    font-size: .3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  header {
+    padding: 10px;
+  }
+
+  header.show-mobile-menu::before {
+    content: "";
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+  }
+
+  .navbar .logo {
+    font-size: 1.7rem;
+  }
+  #hamburger-btn{
+    margin-right: 2rem;
+  }
+    
+  #hamburger-btn, #close-menu-btn {
+    display: block;
+  }
+
+  .navbar .menu-links {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100vh;
+    background: var(--text-color);
+    flex-direction: column;
+    padding: 70px 40px 0;
+    transition: left 0.2s ease;
+  }
+
+  header.show-mobile-menu .navbar .menu-links {
+    left: 0;
+  }
+
+  .navbar a {
+    color: #000;
+  }
+
+  .hero-section .content {
+    text-align: center;
+  }
+
+  .hero-section .content :is(h2, p) {
+    max-width: 100%;
+  }
+
+  .hero-section .content h2 {
+    font-size: 2.3rem;
+    line-height: 60px;
+  }
+  
+  .hero-section .content button {
+    padding: 9px 18px;
+  }
+  .cart-container{
+    width: 45%;
+    margin-top: 5.4rem;
+    font-size: .8rem;
+  }
+  
+  .amount-order{
+    width: 45%;
+    padding: .5rem;
+    font-size: 1rem;
+    margin-top: 28.5rem;
+  }
+  .checkout{
+    font-size: .3rem;
+  }
+}
+
+@media (max-width: 380px){
+footer .footer-content{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(1, .4fr);
+  background: var(--backgrnd-color);
+  padding: 2rem;
+  font-size: 1rem;
+}
+}
