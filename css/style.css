@@ -264,7 +264,7 @@ footer .hours p a:hover{
   }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
   header {
     padding: 10px;
   }
@@ -343,7 +343,7 @@ footer .hours p a:hover{
   }
 }
 
-@media (max-width: 380px){
+@media screen and (max-width: 380px){
 footer .footer-content{
   display: grid;
   gap: 1.5rem;
