@@ -16,7 +16,7 @@ body {
 
 .container img{
     display: flex;
-    margin-left: 7rem;
+    margin-left: 9.8rem;
     border-radius: 10px;
 }
 
@@ -66,7 +66,7 @@ button:hover{
     .container img{
         display: flex;
         margin-top: -1rem;
-        margin-left: 1rem;
+        margin-left: -1rem;
         border-radius: 10px;
     }
     button{
