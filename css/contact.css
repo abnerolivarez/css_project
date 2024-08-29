@@ -73,3 +73,10 @@ button:hover{
         font-size: 1rem;
     }
 }
+@media screen and (max-width: 320px) {
+    .container img{
+        display: flex;
+        margin-top: -1rem;
+        margin-left: -2rem;
+        border-radius: 10px;
+    }
